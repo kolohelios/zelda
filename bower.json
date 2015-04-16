@@ -5,5 +5,12 @@
   "authors": [
     "Chyld Medford <chyld.medford@gmail.com>"
   ],
-  "license": "BSD"
+  "license": "BSD",
+  "dependencies": {
+    "firebase": "~2.2.4",
+    "jquery": "~2.1.3",
+    "moment": "~2.10.2",
+    "lodash": "~3.7.0",
+    "font-awesome": "~4.3.0"
+  }
 }
