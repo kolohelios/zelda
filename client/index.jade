@@ -14,11 +14,13 @@ html
       button#create-user Create User
       button#login-user Login User
       button#logout-user Logoff User
+      button#start-user Start
   
     #character-creation
       input#handle(type='text', placeholder='handle')
       input#avatar(type='url', placeholder='avatar')
       button#create-character Create Character
+
   
     table#characters
       thead
@@ -26,13 +28,12 @@ html
           th Handle
           th Avatar
       tbody
-        
     table#board
           - for(var y = 0; y < 10 ; y++)
             tr
               -for(var x = 0; x < 10; x++)
                 td(data-x=x, data-y=y)
-    
+                  
     script(src='/vendor/lodash/lodash.min.js')
     script(src='/vendor/jquery/dist/jquery.min.js')
     script(src='/vendor/moment/min/moment.min.js')
